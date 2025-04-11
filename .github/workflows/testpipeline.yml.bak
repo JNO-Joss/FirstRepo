@@ -10,8 +10,8 @@ on:
 jobs:
   #only compile will done in this job
   compile:
-    #type of the runner that the job will run on
-    runs-on: ubuntu-latest
+   #type of the runner that the job will run on
+    runs-on: unbutu-latest
 
     #sequences of the tasks that will be executated as part of the job
     steps:
