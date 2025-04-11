@@ -1,0 +1,29 @@
+#workflow konfiguration
+name: test pipeline
+
+#events
+on:
+  push:
+    branches:["main"]
+
+#jobs
+jobs:
+  #only compile will done in this job
+  compile:
+   #type of the runner that the job will run on
+    runs-on: unbutu-latest
+
+    #sequences of the tasks that will be executated as part of the job
+    steps:
+      #clone the remote repository 
+      -uses: actions/checkout@v4
+
+      #run single command using 
+      -name: echo output
+       run: echo test pipeline output
+  
+      #run multiple command using 
+      -name: second echo output
+       run: |
+          echo test combined
+          echo excecutions
