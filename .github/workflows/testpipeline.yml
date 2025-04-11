@@ -19,11 +19,11 @@ jobs:
       -uses: actions/checkout@v4
 
       #run single command using 
-      -name: echo output
-      run: echo test pipeline output
+      - name: echo output
+        run: echo test pipeline output
   
       #run multiple command using 
-      -name: second echo output
-      run: |
+      - name: second echo output
+        run: |
             echo test combined
             echo excecutions
