@@ -16,7 +16,7 @@ jobs:
     #sequences of the tasks that will be executated as part of the job
     steps:
       #clone the remote repository 
-      -uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
       #run single command using 
       - name: echo output
